@@ -1,0 +1,185 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  /* background-color: transparent; */
+}
+.vdo{
+  z-index: -100;
+  width:100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+#display {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8%;
+  overflow: hidden;
+  
+}
+
+
+
+.card{
+  flex-direction: row;
+  position: absolute;
+  top: 6%;
+  left: 40%;
+  width: 20%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.302)
+  );
+  border-radius: 2rem;
+  z-index: 20;
+  backdrop-filter: blur(2rem);
+  padding: 10px;
+  padding-left: 18px;
+
+}
+.newcard{
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  margin-top: 2%;
+  width: 50%; 
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.302)
+  );
+  border-radius: 2rem;
+  z-index: 20;
+  backdrop-filter: blur(2rem);
+  padding: 10px;
+  padding-left: 18px;
+  cursor: move;
+  user-select: none;
+}
+#title,#datetime,#description{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgb(97, 96, 96);
+}
+#title{
+  font-size: larger;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 10px;
+  width: 90%;
+}
+#datetime{
+  padding-left: 7px;
+  margin-top: 6px;
+ 
+}
+#description{
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 8px;
+  width: 90%;
+  font-size: large;
+}
+
+.add-button{
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: 9%;
+  left: 85%;
+  
+  font-size: larger;
+  padding-right: 10px;
+  padding-left: 10px;
+  z-index: 100;
+}
+
+.remove{
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  border-color: rgba(59, 58, 58, 0.609);
+  color: rgb(59, 58, 58);
+  font-size: large;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 8px;
+  z-index: 100;
+}
+@media (max-width:768px) {
+  .vdo{
+    display: none;
+  }
+  body{
+    background-image: url(pexels-photo-775201.jpeg);
+  }
+  #display{
+    padding-top: 40%;
+    width: 100%;
+  }
+  .card{
+    flex-direction: row;
+  position: absolute;
+  top: 6%;
+  left: 18%;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.302)
+  );
+  border-radius: 2rem;
+  z-index: 20;
+  backdrop-filter: blur(2rem);
+  padding: 10px;
+  padding-left: 18px;
+  }
+  .newcard{
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    margin-top: 4%;
+    width: 80%; 
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.302)
+    );
+    border-radius: 2rem;
+    z-index: 20;
+    backdrop-filter: blur(2rem);
+    padding: 10px;
+    padding-left: 18px;
+    cursor: move;
+    user-select: none;
+  }
+  #datetime{
+    padding-left: 7px;
+    margin-top: 9px;
+    font-size: medium;
+   
+  }
+}
