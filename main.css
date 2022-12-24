@@ -182,4 +182,8 @@ body {
     font-size: medium;
    
   }
+  .p{
+    font-size: small;
+    padding-right: 10%;
+  }
 }
